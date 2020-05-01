@@ -1,3 +1,8 @@
-h1 {
-    color: red;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+img {
+    max-height: 10vh;
 }
