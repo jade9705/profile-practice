@@ -186,38 +186,54 @@ h1 {
 .portfolio {
     background-color: #54be90;
     color: white;
-    
-.portfolio h1 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+      
+.mine {
     color: white;
-    text-transform: capitalize;
+    background-color: #54be90;
+    text-align: center;
 }
 .container1 {
-    width: 30%;
+  
     background-color: #ebebeb;
-    display: flex;
+    width: 30%;
 }
 .container2 {
-    width: 30%;
     background-color: #ebebeb;
     display: flex;
 }
 .container3 {
-    width: 30%;
     background-color: #ebebeb;
     display: flex;
 }
 .container4 {
-    width: 30%;
     background-color: #ebebeb;
     display: flex;
 }
 .container5 {
-    width: 30%;
     background-color: #ebebeb;
     display: flex;
 }
 .container6 {
-    width: 30%;
     background-color: #ebebeb;
     display: flex;
+}
+.about {
+    background-color: #ebebeb;
+    color: #232323;
+}
+.about h1 {
+    color: #232323;
+    font-weight: bold;
+}
+.me {
+    border-radius: 50%;
+    display: flex;
+}
+.about p {
+    display: flex;
+    
 }
