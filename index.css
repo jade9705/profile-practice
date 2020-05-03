@@ -53,7 +53,7 @@ h1 {
 }
 .name {
     font-weight: bold;
-    text-decoration: underline white;
+    text-decoration: underline #ffffff;
     color: #54be90;
 }
 .boop {
@@ -184,56 +184,221 @@ h1 {
 .react {width: 60%; background-color: #54be90;}
 
 .portfolio {
-    background-color: #54be90;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+	background-color: #54be90;
+	padding: 2rem 15% 6rem 15%;
+}
 
-}
-      
-.mine {
-    color: white;
-    background-color: #54be90;
-    text-align: center;
-}
-.container1 {
-  
-    background-color: #ebebeb;
-    width: 30%;
-}
-.container2 {
-    background-color: #ebebeb;
-    display: flex;
-}
-.container3 {
-    background-color: #ebebeb;
-    display: flex;
-}
-.container4 {
-    background-color: #ebebeb;
-    display: flex;
-}
-.container5 {
-    background-color: #ebebeb;
-    display: flex;
-}
-.container6 {
-    background-color: #ebebeb;
-    display: flex;
-}
-.about {
-    background-color: #ebebeb;
-    color: #232323;
-}
-.about h1 {
-    color: #232323;
+.portfolio .heading {
+    color: #ffffff;
+    padding: 1em;
     font-weight: bold;
 }
-.me {
-    border-radius: 50%;
-    display: flex;
+
+.portfolio-item-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.about p {
-    display: flex;
+
+.portfolio-item {
+	width: 32%;
+	background-color: #ffffff;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+}
+
+.portfolio-item-highlight {
+	background-color: #232323;
+}
+
+.portfolio-item-highlight:hover {
+	box-shadow: 2px 2px 20px 0px rgba(68, 68, 68, 1);
+}
+
+.portfolio-item-highlight:hover .button {
+	box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.75);
+}
+
+.portfolio-img {
+	width: 100%;
+	height: 10rem;
+	object-fit: cover;
+}
+
+.portfolio-desc {
+	background-color: #ebebeb;
+	text-align: center;
+	padding: 1rem;
+}
+
+.portfolio-text {
+	margin: 0;
+}
+
+.portfolio-stack {
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+}
+
+.portfolio .button {
+	display: block;
+	width: 80%;
+}
+.aboutme {
+    color: #232323;
+    background-color: #ebebeb;
+    font-weight: bold;
+    width: 100%;
     
+
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;   
+    background-color: #ebebeb;
+    padding-bottom: 8em;
+    
+}
+ .me {
+    border-radius: 50%;
+    padding: 1em;
+ }  
+.image {
+ 
+    width: 40%;
+    max-width: 30rem;
+    height: 30rem;
+}
+.text {
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 3em;
+   
+}
+.text p {
+    padding: 1em 0em 1em 3em;
+}
+.text p span {
+    border-bottom: 0.5em solid #54be90;
+}
+.cta {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.buttoncontact {
+    background-color: #54be90;
+    color: white;
+    font-size: 2em;
+    border-radius: 20%;
+}
+.buttoncontact:hover {
+    opacity: 50%;
+}
+.findme  {
+    background-color: #232323;
+    width: 100%;
+}
+.findme h1 {
+    font-weight: bold;
+    padding: 1em;
+    
+}
+.media {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 6em;
+}
+.social:hover  {
+	opacity: 0.75;
+}
+.contact {
+    background-color: #54be90;
+}
+.contact .heading {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 4rem;
+}
+.form-input {
+	width: 48%;
+	color: #ffffff;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #ebebeb;
+	outline: none;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.form-input::placeholder {
+	color: #ebebeb;
+}
+.form-label {
+	width: 100%;
+	color: #ebebeb;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.form-textarea {
+	width: 100%;
+	border: none;
+	border-radius: 0.5rem;
+	outline: none;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+}
+.form-button {
+	width: 100%;
+	color: #ffffff;
+	background-color: #232323;
+	border: none;
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 4rem;
+	padding: 0.75rem;
+	cursor: pointer;
+}
+
+.form-button:hover {
+	box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.75);
+}
+.footer {
+	background-color: #ebebeb;
+	padding: 4rem 15%;
+}
+.footer .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+      color: #232323;
+      font-size: 3.5rem;
+      font-weight: 800;
+  }
+  
+  .footer-line {
+      width: 25%;
+      height: 0.5rem;
+      background-color: #54be90;
+  }
+  
+.footer-copy {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 4rem;
 }
